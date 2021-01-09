@@ -1,14 +1,32 @@
 <head>
   <style>
-    body {
-      background-color: powderblue;
+    .container{
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 600px;
+      grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "feat feat feat feat feat feat feat feat"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft"
+      border: 2px solid yellow;
     }
-    h1 {
-      color: blue;
+    .box{
+      width: 100%;
+      border: 1px solid red;
+      background: #F8FA9D;
     }
-    p {
-      color: red;
-      font-size: 20px;
+    .header{
+      grid-area: hd;
+    }
+    .footer{
+      grid-area: ft;
+    }
+    .feature{
+      grid-area: feat;
+    }
+    .content{
+      grid-area: main;
     }
   </style>
 </head>
