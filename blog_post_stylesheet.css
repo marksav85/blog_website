@@ -22,22 +22,7 @@
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-    .header > div:nth-child(3) {
-    margin-left: auto;
-    }
-    .header > div:nth-child(1) {
-    margin-right: auto;
-    }
-    .main {
-      width: 100%;
-      border-radius: 5px;
-      height: 100%;
-      padding: 5px;
-      display: grid;
-      grid-template-columns: 20% 80%;
+    justify-content: space-between;
     }
     .content {
     width: 100%;
