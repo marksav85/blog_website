@@ -41,6 +41,9 @@
     padding: 5px;
     box-sizing: border-box;
     }
+
+    .picture1 {
+    }
     .sidebar {
     width: 20%;
     height: 500px;
@@ -48,7 +51,12 @@
     color: white;
     padding: 20px;
     box-sizing: border-box;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+
     }
     .footer {
     width: 100%;
