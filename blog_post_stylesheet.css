@@ -2,9 +2,10 @@
   <style>
   body {
     padding: 20px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.75
+    ;
     }
     .container {
     width: 99%;
@@ -17,13 +18,18 @@
     .header {
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-color: #96A0AA;
     color: black;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     }
+
+    .icon {
+    background: url("search");
+  }
+
     .content {
       width: 99%;
       border-radius: 5px;
@@ -37,7 +43,7 @@
     .gallery {
     width: 75%;
     height: 500px;
-    background-color: white;
+    background-color: #B2CEE0;
     color: black;
     padding: 5px;
     box-sizing: border-box;
@@ -48,7 +54,7 @@
     .sidebar {
     width: 25%;
     height: 500px;
-    background-color: white;
+    background-color: #ABE9CA;
     color: black;
     padding: 20px;
     box-sizing: border-box;
@@ -60,7 +66,7 @@
     .footer {
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: #DCBFF3;
     padding: 20px;
     box-sizing: border-box;
     color: black;
