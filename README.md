@@ -8,7 +8,7 @@ Blog Website
 This is a generic **blog website** written in _HTML and CSS_
 
 ### Files used
-
+images
 
 ### Language
 HTML and CSS
