@@ -38,7 +38,7 @@
     width: 75%;
     height: 500px;
     background-color: white;
-    color: white;
+    color: black;
     padding: 5px;
     box-sizing: border-box;
     display: flex;
@@ -56,8 +56,6 @@
     flex-direction: column;
     justify-content: space-around;
 
-
-
     }
     .footer {
     width: 100%;
@@ -66,12 +64,11 @@
     padding: 20px;
     box-sizing: border-box;
     color: black;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+
     }
     p {
-    margin: 20px;
-    background-color: green;
+    text-align: center;
     }
   </style>
 </body>
