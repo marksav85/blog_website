@@ -1,31 +1,48 @@
 
 .container{
-  /* This is just one example of a solution */
   display: grid;
   border: 2px solid blue;
-  grid-template-rows: 450px 450px 450px;
-  grid-template-columns: 100px 100px 100px
+  grid-template-rows: 100px 200px 200px 200px;
+
+  grid-template-areas:
+  "hd hd hd hd"
+  "c1 c1 c1 au"
+  "c2 c2 c2 au"
+  "c3 c3 c3 au";
   grid-gap: 15px;
-
-  }
-  .card {
-
-    width: 500px;
-    height: 400px;
-    border: 1px solid red;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    transition: 0.3s;
-    padding: 20px;
-    text-align: center;
-  }
-
-.author {
-  width: 200px;
-  height: 200px;
-  margin: right;
+}
+.box {
   border: 1px solid red;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
   padding: 20px;
   text-align: center;
+}
+
+.author {
+  border: 1px solid red;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+  padding: 20px;
+  text-align: center;
+}
+
+#zero {
+  grid-area: hd
+}
+
+#one {
+  grid-area: c1
+}
+
+#two {
+  grid-area: c2
+}
+
+#three {
+  grid-area: c3
+}
+
+#four {
+  grid-area: au
 }
