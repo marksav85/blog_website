@@ -2,13 +2,15 @@
 .container{
   display: grid;
   border: 2px solid blue;
-  grid-template-rows: 1fr 2fr 2fr 2fr;
-
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
   grid-template-areas:
-  "hd hd hd hd"
-  "c1 c1 c1 au"
-  "c2 c2 c2 au"
-  "c3 c3 c3 au";
+  "hd hd hd"
+  "c1 c1 c1"
+  "c2 c2 c2"
+  "c3 c3 c3"
+  "au au au"
+  "ft ft ft"
+  ;
   grid-gap: 15px;
 }
 .box {
@@ -27,7 +29,7 @@
   text-align: center;
 }
 
-#zero {
+#header {
   grid-area: hd;
 
 }
@@ -52,4 +54,22 @@
 
 #four {
   grid-area: au
+}
+
+#footer {
+  grid-area: ft;
+}
+
+@media (min-width:900px) {
+  .container{
+    display: grid;
+    border: 2px solid blue;
+    grid-template-rows: 100px 1fr 1fr 1fr 100px;
+    grid-template-areas:
+    "hd hd hd hd"
+    "c1 c1 c1 au"
+    "c2 c2 c2 au"
+    "c3 c3 c3 au"
+    "ft ft ft ft";
+    grid-gap: 15px;
 }
