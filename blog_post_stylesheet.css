@@ -2,7 +2,7 @@
 .container{
   display: grid;
   border: 2px solid blue;
-  grid-template-rows: 100px 200px 200px 200px;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
 
   grid-template-areas:
   "hd hd hd hd"
@@ -28,19 +28,26 @@
 }
 
 #zero {
-  grid-area: hd
+  grid-area: hd;
+
 }
 
 #one {
-  grid-area: c1
+  grid-area: c1;
+  display: flex;
+  justify-content: space-between;
 }
 
 #two {
-  grid-area: c2
+  grid-area: c2;
+  display: flex;
+  justify-content: space-between;
 }
 
 #three {
-  grid-area: c3
+  grid-area: c3;
+  display: flex;
+  justify-content: space-between;
 }
 
 #four {
