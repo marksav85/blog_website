@@ -1,19 +1,4 @@
-<body>
-  <style>
-  body {
-    padding: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 5px;
-    line-height: 1.75;
-  }
 
-  h1 {
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  p {
-    font-family: 'Open Sans', sans-serif;
-  }
     .container {
       width: 99%;
       border-radius: 5px;
@@ -35,27 +20,49 @@
     .content {
       width: 100%;
       border-radius: 5px;
+      border: 1px solid blue;
       height: 100%;
       display: flex;
+      justify-content: space-between;
     }
     .gallery {
-      width: 90%;
+      width: 80%;
       height: 500px;
+      border: 1px solid red;
       background-color: white;
       color: black;
-      padding: 2px 16px;
+      padding: 15px;
       box-sizing: border-box;
       display: flex;
+      justify-content: space-around;
+      align-items: stretch;
       flex-wrap: wrap;
-      justify-content: space-between;
-      flex-direction: column;
+      flex-direction: row;
       }
 
+    img {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
     .card {
+      width: 150px;
+      height: 100px;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
       transition: 0.3s;
-      padding: 2px 16px;
+      padding: 15px;
       text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+    }
+
+    .card_text {
+      border: 1px solid green;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .card:hover {
@@ -63,7 +70,7 @@
     }
 
     .sidebar {
-      width: 10%;
+      width: 20%;
       height: 500px;
       background-color: white;
       color: black;
@@ -74,8 +81,8 @@
       flex-direction: column;
       justify-content: space-around;
     }
-    .item {
-      font-family: 'Open Sans', sans-serif
+    .side_text{
+      font-family: 'Open Sans', sans-serif;
     }
     .footer {
       width: 100%;
@@ -85,7 +92,55 @@
       box-sizing: border-box;
       color: black;
       text-align: center;
+    }
+
+
+@media (min-width:900px) {
+  .gallery {
+    width: 90%;
+    height: 500px;
+    background-color: white;
+    color: black;
+    padding: 2px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    }
+
+  .sidebar {
+    width: 10%;
+    height: 500px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+  .card {
+    width: 45%;
+    height:25%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 15px;
+    text-align: below;
+    display: flex;
+
+    justify-content: space-between;
 
     }
-  </style>
-</body>
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+  .card_text {
+    border: 1px solid green;
+    text-align: center;
+    }
+  }
