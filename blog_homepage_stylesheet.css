@@ -123,21 +123,22 @@
     }
 
   .card {
-    width: 45%;
-    height:25%;
+    width: 30%;
+    height:40%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     padding: 15px;
     text-align: below;
     display: flex;
-
-    justify-content: space-between;
+    justify-content: space-around;
 
     }
 
     img {
-      width: 150px;
-      height: auto;
+      width: 100%;
+      height: 175px;
+      text-align: center;
+
     }
   .card_text {
     border: 1px solid green;
