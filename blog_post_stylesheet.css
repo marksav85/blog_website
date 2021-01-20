@@ -1,7 +1,7 @@
 
 .container{
   display: grid;
-  border: 2px solid blue;
+
   grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
   grid-template-areas:
   "hd hd hd"
@@ -22,11 +22,38 @@
 }
 
 .author {
+  display: flex;
+  flex-direction: column;
   border: 1px solid red;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
   padding: 20px;
-  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.sm_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  height: 100px;
+  border: 2px solid green;
+}
+
+.icon  {
+  width: 10%;
+  height: auto;
+  margin: 15px;
+
 }
 
 #header {
