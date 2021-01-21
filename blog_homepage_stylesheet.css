@@ -26,20 +26,33 @@
       justify-content: space-between;
     }
     .gallery {
-      width: 80%;
-      height: 500px;
-      border: 1px solid red;
-      background-color: white;
-      color: black;
-      padding: 15px;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-around;
-      align-items: stretch;
-      flex-wrap: wrap;
-      flex-direction: row;
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas:
+      "tl tc tr"
+      "bl bc br";
+      grid-gap: 15px;
+      border: 1px solid blue;
       }
 
+      #july  {
+      grid-area: tl;
+      }
+      #august  {
+      grid-area: tc;
+      }
+      #september  {
+      grid-area: tr;
+      }
+      #october  {
+      grid-area: bl;
+      }
+      #november  {
+      grid-area: bc;
+      }
+      #december  {
+      grid-area: br;
+      }
     img {
       width: 100%;
       height: auto;
