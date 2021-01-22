@@ -1,15 +1,14 @@
-<body>
-  <style>
+
   body {
     padding: 20px;
     font-family: sans-serif;
-    /*color: #222;*/
-    font-size: 5px;
+    color: #222;
+    font-size: 3vw;
     line-height: 1.75;
-    color: red;
   }
 
   h1 {
+    font-size: 5vw;
     font-family: 'Lato', sans-serif;
     color: blue;
   }
@@ -21,9 +20,19 @@
   p {
     font-family: 'Open Sans', sans-serif;
   }
-  </style>
-</body>
+
+  .sidebar {
+    /*background-color: white;
+    color: #222;*/
+  }
+
 
 @media (min-width:900px) {
-
+  body {
+    padding: 20px;
+    font-family: sans-serif;
+    color: #222;
+    font-size: 2vw;
+    line-height: 1.75;
+  }
 }
