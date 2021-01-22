@@ -20,7 +20,7 @@
     .content {
       width: 100%;
       border-radius: 5px;
-      border: 1px solid blue;
+
       height: 100%;
       display: flex;
       justify-content: space-between;
@@ -35,7 +35,7 @@
       "ml mr"
       "bl br";
       grid-gap: 15px;
-      border: 1px solid red;
+
       }
 
       #july  {
@@ -80,7 +80,7 @@
       background-size: cover;
       background-position: center;*/
 
-      border: 2px solid blue;
+
 
     }
     img {
@@ -96,7 +96,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 2px solid green;
+
       font-family: 'Open Sans', sans-serif;
     }
 
@@ -108,8 +108,6 @@
       min-width: 20%;
       max-width: 30%;
       height: auto;
-      background-color: white;
-      color: black;
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
@@ -120,6 +118,7 @@
     .side_text{
       font-family: 'Open Sans', sans-serif;
     }
+
     .footer {
       width: 100%;
       height: auto;
