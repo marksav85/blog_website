@@ -11,12 +11,19 @@
     font-size: 6vw;
     font-family: 'Lato', sans-serif;
     font-weight: normal;
+    font-style: italic;
     text-align: center;
   }
 
   h2 {
     font-size: 5vw;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h5 {
+    padding: none;
     text-align: center;
   }
 
