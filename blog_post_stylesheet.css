@@ -2,7 +2,7 @@
 .container{
   display: grid;
 
-  grid-template-rows: 100px 1fr 1fr 1fr 1fr 100px;
+  grid-template-rows: 150px 1fr 1fr 1fr 1fr 150px;
   grid-template-areas:
   "hd hd hd"
   "c1 c1 c1"
@@ -13,28 +13,35 @@
   ;
   grid-gap: 15px;
 }
-.box {
 
+.box {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
-  padding: 20px;
   text-align: center;
+  background-color: #F7F7F8;
+}
+
+.title {
+
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .author {
   display: flex;
   flex-direction: column;
-
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   transition: 0.3s;
   padding: 20px;
+  background-color: #F7F7F8;
   align-items: center;
   justify-content: space-between;
 }
 
 .avatar {
   width: 100px;
-  height: 100px;
+  height: auto;
   border-radius: 50%;
 
 }
@@ -53,11 +60,13 @@
   width: 10%;
   height: auto;
   margin: 15px;
-
 }
 
 #header {
   grid-area: hd;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 
@@ -80,18 +89,22 @@
 }
 
 #four {
-  grid-area: au
+  grid-area: au;
+  display: flex;
+  justify-content: space-around;
 }
 
 #footer {
   grid-area: ft;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (min-width:900px) {
   .container{
     display: grid;
-    
-    grid-template-rows: 100px 1fr 1fr 1fr 100px;
+
+    grid-template-rows: 200px 1fr 1fr 1fr 200px;
     grid-template-areas:
     "hd hd hd hd"
     "c1 c1 c1 au"
@@ -99,4 +112,50 @@
     "c3 c3 c3 au"
     "ft ft ft ft";
     grid-gap: 15px;
-}
+    }
+
+  .avatar {
+    width: 500px;
+    height: auto;
+    text-align: center;
+
+
+    }
+
+    .author {
+      display: flex;
+      flex-direction: column;
+
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      transition: 0.3s;
+      padding: 20px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    #four {
+      grid-area: au;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .sm_icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 80%;
+      height: 150px;
+    }
+
+    .icon  {
+      width: 15%;
+      height: auto;
+      margin: 15px;
+    }
+
+    .bio  {
+      margin-bottom: 100px;
+    }
+
+
+  }
