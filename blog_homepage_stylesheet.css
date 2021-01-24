@@ -11,10 +11,37 @@
       height: auto;
       background-color: #F7F7F8;
       color: black;
-      padding: 20px;
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
+    }
+
+    .subscribe {
+      padding: 20px;
+    }
+
+    .home_title {
+      padding: 5px;
+    }
+
+    .search {
+      background-color: #F7F7F8;
+      width: 40px;
+      height: auto;
+      padding-top: 15px;
+      padding-right: 10px;
+
+    }
+
+    .btn {
+      background-color: #F7F7F8;
+      cursor: pointer;
+      border: none;
+      padding: 5px;
+    }
+
+    .btn:hover {
+      background-color: #B4B9BD;
     }
 
     .content {
@@ -77,13 +104,8 @@
     .card_image {
       width: 100%;
       height: auto;
-      /*background-image: url("netflix1.svg");
-      background-size: cover;
-      background-position: center;*/
-
-
-
     }
+
     img {
       width: 100%;
       height: auto;
@@ -97,7 +119,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
       font-family: 'Open Sans', sans-serif;
     }
 
@@ -117,6 +138,7 @@
       flex-direction: column;
       justify-content: space-around;
     }
+
     .side_text{
       font-family: 'Open Sans', sans-serif;
     }
@@ -127,7 +149,6 @@
       background-color: #F7F7F8;
       padding: 20px;
       box-sizing: border-box;
-      
       text-align: center;
     }
 
