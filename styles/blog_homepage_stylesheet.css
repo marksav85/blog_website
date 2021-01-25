@@ -1,0 +1,192 @@
+
+    .container {
+      width: 99%;
+      border-radius: 5px;
+      height: 100%;
+      padding: 5px;
+    }
+
+    .header {
+      width: 100%;
+      height: auto;
+      background-color: #F7F7F8;
+      color: black;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .subscribe {
+      padding: 20px;
+    }
+
+    .home_title {
+      padding: 5px;
+    }
+
+    .search {
+      background-color: #F7F7F8;
+      width: 40px;
+      height: auto;
+      padding-top: 15px;
+      padding-right: 10px;
+
+    }
+
+    .btn {
+      background-color: #F7F7F8;
+      cursor: pointer;
+      border: none;
+      padding: 5px;
+    }
+
+    .btn:hover {
+      background-color: #B4B9BD;
+    }
+
+    .content {
+      width: 100%;
+      border-radius: 5px;
+
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .gallery {
+      width: 80%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "tl tr"
+      "ml mr"
+      "bl br";
+      grid-gap: 15px;
+
+      }
+
+      #july  {
+      grid-area: tl;
+      }
+
+      #august  {
+      grid-area: tr;
+      }
+
+      #september  {
+      grid-area: ml;
+      }
+
+      #october  {
+      grid-area: mr;
+      }
+
+      #november  {
+      grid-area: bl;
+      }
+
+      #december  {
+      grid-area: br;
+      }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+      transition: 0.3s;
+      padding: 15px;
+      background-color: #F7F7F8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+
+    }
+
+    .card_image {
+      width: 100%;
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      object-fit: cover;
+    }
+
+    .card_text {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    }
+
+    .sidebar {
+      min-width: 20%;
+      max-width: 30%;
+      height: auto;
+      padding: 20px;
+      background-color: #F7F7F8;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .side_text{
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer {
+      width: 100%;
+      height: auto;
+      background-color: #F7F7F8;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+
+@media (min-width:900px) {
+
+  .gallery {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "tl tc tr"
+    "bl bc br";
+    grid-gap: 15px;
+    }
+
+    #july  {
+    grid-area: tl;
+    }
+
+    #august  {
+    grid-area: tc;
+    }
+
+    #september  {
+    grid-area: tr;
+    }
+
+    #october  {
+    grid-area: bl;
+
+    }
+    #november  {
+    grid-area: bc;
+    }
+
+    #december  {
+    grid-area: br;
+    }
+  }
