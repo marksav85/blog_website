@@ -1,7 +1,11 @@
+@import "headings.css";
+@import "body.css";
+@import "paragraph.css";
+
 
 .container  {
   display: grid;
-  grid-template-rows: 150px 1fr 1fr 1fr 800px 150px;
+  grid-template-rows: 150px 1fr 1fr 1fr 900px 150px;
   grid-template-areas:
   "hd hd hd"
   "c1 c1 c1"

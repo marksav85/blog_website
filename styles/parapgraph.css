@@ -1,0 +1,10 @@
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width:900px) {
+  p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+  }
+}
