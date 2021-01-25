@@ -45,9 +45,10 @@ img {
 }
 
 .avatar {
-  width: 100px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
+  text-align: center;
 }
 
 #company {
