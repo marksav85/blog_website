@@ -1,7 +1,6 @@
 
 .container{
   display: grid;
-
   grid-template-rows: 150px 1fr 1fr 1fr 1fr 150px;
   grid-template-areas:
   "hd hd hd"
@@ -42,7 +41,14 @@
   width: 100px;
   height: auto;
   border-radius: 50%;
+}
 
+#company {
+  color: #DD3131;
+}
+
+#country {
+  color: #FFAE0C;
 }
 
 .sm_icons {
@@ -52,7 +58,6 @@
   justify-content: space-around;
   width: 80%;
   height: 100px;
-
 }
 
 .icon  {
@@ -102,7 +107,6 @@
 @media (min-width:900px) {
   .container{
     display: grid;
-
     grid-template-rows: 200px 1fr 1fr 1fr 200px;
     grid-template-areas:
     "hd hd hd hd"
@@ -117,8 +121,6 @@
     width: 500px;
     height: auto;
     text-align: center;
-
-
     }
 
     .author {
@@ -137,6 +139,7 @@
       display: flex;
       justify-content: flex-start;
     }
+
     .sm_icons {
       display: flex;
       flex-direction: row;
@@ -155,6 +158,4 @@
     .bio  {
       margin-bottom: 100px;
     }
-
-
   }
